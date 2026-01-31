@@ -9,6 +9,11 @@ const UserSchema=new mongoose.Schema({
 			requierd:true,
 			min:18,
 			max:100
+		},
+		addr:{
+			type:String,
+			required:true,
+			uppercase:true
 		}
 	})
 	const usrMdl=mongoose.model("mydetail",UserSchema)
